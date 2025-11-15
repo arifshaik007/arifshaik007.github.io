@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRAVEL WITH ARIFARYA — Official Site</title>
+  <meta name="description" content="Travel vlogs, trek guides & food finds — TRAVEL WITH ARIFARYA" />
+  <meta name="theme-color" content="#0c5c63"/>
+
+  <!-- Tailwind CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{--bg:#0b1320;--muted:#94a3b8;--accent:#f59e0b}
+    body{background:linear-gradient(180deg,#071022 0%, #07101a 100%); color:#e6eef7; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .hero{background:linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="%230b1320"/><stop offset="1" stop-color="%231e3a3b"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g)"/><text x="50%" y="45%" fill="%23ffffff" font-family="Arial" font-size="48" text-anchor="middle">STEP INTO MY WORLD</text></svg>') center/cover no-repeat;}
+    .brand-svg {width:44px; height:44px}
+    a.ghost {background:transparent; border:1px solid rgba(255,255,255,0.06)}
+    iframe {border:0}
+    .card {background:rgba(255,255,255,0.03); border-radius:10px; overflow:hidden}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-black/40 backdrop-blur-sm">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <!-- inline SVG logo -->
+        <svg class="brand-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="logo">
+          <defs>
+            <linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#0db1b4"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="url(#lg)"/>
+          <text x="50" y="58" font-size="36" font-family="Arial" text-anchor="middle" fill="#081018" font-weight="700">TW</text>
+        </svg>
+        <div>
+          <div class="font-bold text-white">TRAVEL WITH ARIFARYA</div>
+          <div class="text-xs text-slate-300">YouTube • Travel Vlogs</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-4 text-sm">
+        <a href="#videos" class="hover:text-white">Videos</a>
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="https://youtube.com/@travel_with_arifarya" target="_blank" class="ml-2 px-3 py-2 bg-red-600 rounded text-white font-semibold">Subscribe</a>
+      </nav>
+
+      <button onclick="document.getElementById('m').classList.toggle('hidden')" class="md:hidden px-3 py-2 text-white">☰</button>
+    </div>
+    <div id="m" class="hidden md:hidden border-t border-white/5">
+      <div class="max-w-5xl mx-auto p-3 flex flex-col gap-2">
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero min-h-[50vh] flex items-center">
+    <div class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold">Welcome — <span style="color:var(--accent)">TRAVEL WITH ARIFARYA</span></h1>
+        <p class="mt-3 text-slate-300 max-w-md">Join me as I explore hidden gems, food, and epic treks across India. New travel vlogs and trek guides every week.</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://youtube.com/@travel_with_arifarya?sub_confirmation=1" target="_blank" class="px-4 py-2 rounded bg-red-600 font-semibold">Subscribe</a>
+          <a href="#videos" class="px-4 py-2 rounded ghost">Watch Latest</a>
+        </div>
+      </div>
+
+      <div class="card p-2">
+        <!-- Featured video (hero) -->
+        <div style="position:relative;padding-top:56.25%">
+          <iframe src="https://www.youtube.com/embed/gnPuJgNA19M" allowfullscreen style="position:absolute;left:0;top:0;width:100%;height:100%"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="max-w-5xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold">Latest Videos</h2>
+    <p class="text-slate-400 mt-2">Tap any video to watch. These are your recent uploads.</p>
+
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="card p-3">
+        <div style="position:relative;padding-top:56.25%">
+          <iframe src="https://www.youtube.com/embed/gnPuJgNA19M" allowfullscreen style="position:absolute;left:0;top:0;width:100%;height:100%"></iframe>
+        </div>
+        <h3 class="mt-3 font-semibold">Kodachadri Trek - Shivamogga to Kodachadri</h3>
+        <p class="text-xs text-slate-400 mt-1">A trek through Kodachadri — tips, route and views.</p>
+      </div>
+
+      <div class="card p-3">
+        <div style="position:relative;padding-top:56.25%">
+          <iframe src="https://www.youtube.com/embed/uorRs7RZKdY" allowfullscreen style="position:absolute;left:0;top:0;width:100%;height:100%"></iframe>
+        </div>
+        <h3 class="mt-3 font-semibold">Travel Vlog — (Second Video)</h3>
+        <p class="text-xs text-slate-400 mt-1">Short travel vlog and local food exploration.</p>
+      </div>
+
+      <div class="card p-3">
+        <div style="position:relative;padding-top:56.25%">
+          <iframe src="https://www.youtube.com/embed/kgur2XawCjo" allowfullscreen style="position:absolute;left:0;top:0;width:100%;height:100%"></iframe>
+        </div>
+        <h3 class="mt-3 font-semibold">North Goa Scam - Baga Beach</h3>
+        <p class="text-xs text-slate-400 mt-1">A cautionary vlog about common scams and tips at Baga.</p>
+      </div>
+    </div>
+
+    <div class="mt-6 text-center">
+      <a href="https://youtube.com/@travel_with_arifarya/videos" target="_blank" class="px-4 py-2 rounded ghost">See all on YouTube</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-5xl mx-auto px-4 py-10 border-t border-white/5">
+    <div class="md:flex md:gap-8">
+      <div class="md:flex-1">
+        <h3 class="text-2xl font-bold">About</h3>
+        <p class="text-slate-300 mt-3">TRAVEL WITH ARIFARYA shares travel vlogs, trek guides and local food experiences — honest, helpful, and filmed on the road.</p>
+      </div>
+      <div class="md:w-64 mt-6 md:mt-0 p-4 bg-white/3 rounded">
+        <div class="text-sm">Quick stats</div>
+        <div class="mt-3 grid grid-cols-3 text-center gap-2">
+          <div><div class="font-bold">123K</div><div class="text-xs text-slate-300">Subs</div></div>
+          <div><div class="font-bold">520</div><div class="text-xs text-slate-300">Videos</div></div>
+          <div><div class="font-bold">12M</div><div class="text-xs text-slate-300">Views</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-5xl mx-auto px-4 py-10 border-t border-white/5">
+    <h3 class="text-2xl font-bold">Contact</h3>
+    <p class="text-slate-400 mt-2">Business inquiries: <a href="mailto:you@example.com" class="underline">you@example.com</a></p>
+    <p class="mt-4 text-sm text-slate-300">Want changes? Reply here and I’ll update the site file for you to paste again.</p>
+  </section>
+
+  <footer class="max-w-5xl mx-auto px-4 py-8 text-sm text-slate-400">
+    © <span id="year"></span> TRAVEL WITH ARIFARYA — <a href="https://youtube.com/@travel_with_arifarya" target="_blank" class="underline">YouTube channel</a>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
